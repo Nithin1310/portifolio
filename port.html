@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M Nithin Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #f4f4f4;
+        }
+        header {
+            background-color: #000;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        header img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-top: -75px;
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        header .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+        }
+        nav {
+            background: linear-gradient(90deg, black, blue);
+            color: white;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s, background-color 0.3s;
+            padding: 10px 15px;
+        }
+        nav a:hover {
+            color: black;
+            background-color: #ff9800;
+            border-radius: 5px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .about {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .about h2 {
+            font-size: 1.8em;
+        }
+        .about p {
+            margin: 10px 0;
+            font-style: italic;
+        }
+        .skills, .education, .projects, .chat {
+            margin: 40px 0;
+        }
+        .skills h2, .education h2, .projects h2, .chat h2 {
+            text-align: center;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+        .skill-item, .education-item {
+            margin: 10px 0;
+        }
+        .skill-item h3, .education-item h3 {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+        .progress-bar {
+            height: 20px;
+            background-color: #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 5px 0;
+        }
+        .progress-bar span {
+            display: block;
+            height: 100%;
+            text-align: center;
+            line-height: 20px;
+            color: white;
+        }
+        .projects img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        .chat {
+            text-align: center;
+        }
+        .chat-box {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+        }
+        .chat-messages {
+            height: 200px;
+            overflow-y: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        .chat-messages div {
+            margin-bottom: 5px;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .chat-messages .user {
+            background-color: #4caf50;
+            color: white;
+            text-align: right;
+        }
+        .chat-messages .bot {
+            background-color: #2196f3;
+            color: white;
+            text-align: left;
+        }
+        #chatInput {
+            width: calc(100% - 70px);
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        #sendButton {
+            width: 60px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="logo.png" alt="Logo">
+        <img src="profile.jpg" alt="Nithin">
+        <h1>M Nithin</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#chat">Chat</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>Hello! I am M Nithin, a passionate computer science student enthusiastic about solving real-world problems through technology. With a strong foundation in web development and programming, I aim to innovate and create impactful solutions. My dedication to learning and my problem-solving abilities set me apart as a dependable and driven individual.</p>
+            <p>Email: chintum1310@gmail.com | Phone: +91 7601091783</p>
+        </section>
+
+        <section id="education" class="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Dr KKR's GOWTHAM SCHOOL</h3>
+                <p>10th class</p>
+            </div>
+            <div class="education-item">
+                <h3>Narayana Junior College</h3>
+                <p>Intermediate (class 11-12), 2019-2020</p>
+            </div>
+            <div class="education-item">
+                <h3>MLR Institute of Technology</h3>
+                <p>Bachelor of Science in Computer Science, 2022-2026 | CGPA - 8.10</p>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <div class="skill-item">
+                <h3>Java</h3>
+                <div class="progress-bar">
+                    <span style="width: 88%; background-color: #4caf50;">88%</span>
+                </div>
+            </div>
+            <div class="skill-item">
+                <h3>Python</h3>
+                <div class="progress-bar">
+                    <span style="width: 77%; background-color: #2196f3;">77%</span>
+                </div>
+            </div>
+            <div class="skill-item">
+                <h3>C</h3>
+                <div class="progress-bar">
+                    <span style="width: 76%; background-color: #ff9800;">76%</span>
+                </div>
+            </div>
+            <div class="skill-item">
+                <h3>JavaScript</h3>
+                <div class="progress-bar">
+                    <span style="width: 80%; background-color: #f44336;">80%</span>
+                </div>
+            </div>
+            <div class="skill-item">
+                <h3>C++</h3>
+                <div class="progress-bar">
+                    <span style="width: 70%; background-color: #9c27b0;">70%</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>E-commerce Website</h3>
+                <img src="screenshot.jpg" alt="E-commerce Project">
+                <p>Developed a fully functional e-commerce website using HTML, CSS, JavaScript, Node.js, and MongoDB. Features include user authentication, product catalog, and secure payment gateway integration.</p>
+            </div>
+            <div class="project-item">
+                <h3>Portfolio Website</h3>
+                <img src="scree.png" alt="Portfolio Project">
+                <p>Designed and implemented a responsive personal portfolio website using React, showcasing skills, projects, and contact information.</p>
+            </div>
+        </section>
+
+        <section id="chat" class="chat">
+            <h2>Chat with Me</h2>
+            <div class="chat-box">
+                <div id="chatMessages" class="chat-messages"></div>
+                <input type="text" id="chatInput" placeholder="Type your message here..." />
+                <button id="sendButton">Send</button>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Nithin. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const chatMessages = document.getElementById("chatMessages");
+        const chatInput = document.getElementById("chatInput");
+        const sendButton = document.getElementById("sendButton");
+
+        sendButton.addEventListener("click", async () => {
+            const message = chatInput.value.trim();
+            if (message) {
+                // Display user message
+                const userMessage = document.createElement("div");
+                userMessage.className = "user";
+                userMessage.textContent = message;
+                chatMessages.appendChild(userMessage);
+
+                // Clear input
+                chatInput.value = "";
+
+                // Simulate bot response (Replace with backend API call)
+                const botResponse = document.createElement("div");
+                botResponse.className = "bot";
+                botResponse.textContent = "Thanks for your message! I will get back to you soon.";
+                chatMessages.appendChild(botResponse);
+            }
+        });
+    </script>
+</body>
+</html>
